@@ -65,11 +65,16 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* body */
+/* body & hr */
 body {
 	margin: auto;
 	width: 1000px;
 	height: auto;
+}
+
+hr {
+	width: 1000px;
+	margin: 50px 0;
 }
 
 /* header */
@@ -126,4 +131,28 @@ header img {
 .section1 h1 button:hover {
 	background: #ebebeb;
   text-decoration: none;
+}
+
+/* section2 */
+.section2 {
+	display: flex;
+}
+
+.section2 div { /* How to get text divs on the edges? */
+	padding: 0 30px;
+}
+
+/* middle-img */
+.middle-img {
+	width: 100%;
+	padding: 50px 0;
+}
+
+/* section3 */
+.section3 {
+	display: flex;
+}
+
+.section3 div {
+	padding: 0 30px;
 }
