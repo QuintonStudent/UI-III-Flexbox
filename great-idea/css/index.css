@@ -197,16 +197,15 @@ footer {
 /* services-section(2-7) */
 .grouped-section {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	align-content: space-space-between;
 }
 
 .grouped-section section {
 	border: solid 1px black;
 	padding: 25px;
 	background-color: #ebebeb;
-	width: 40%;
+	width: 49%;
 }
 
 .grouped-section button {
@@ -225,4 +224,15 @@ footer {
 .grouped-section button:hover {
 	background: #dedede;
   text-decoration: none;
+}
+
+/* services-section8 */
+.services-section8 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-section8 div {
+	padding: 10px;
+	width: 49%;
 }
