@@ -98,6 +98,14 @@ header nav a {
 	text-decoration: none;
 }
 
+header nav a:hover {
+	color: #000;
+}
+
+header nav a:active {
+	color: #fff;
+}
+
 header img {
 	padding-right: 30px;
 }
