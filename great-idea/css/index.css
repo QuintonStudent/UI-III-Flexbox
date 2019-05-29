@@ -156,3 +156,19 @@ header img {
 .section3 div {
 	padding: 0 30px;
 }
+
+/* contact-section */
+.contact-section { /* temporary fix */
+	padding-left: 30px;
+}
+.contact-section div { /* How to get spacing between text? */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* footer (copyright) */
+footer {
+	text-align: center;
+	padding: 50px 0;
+}
