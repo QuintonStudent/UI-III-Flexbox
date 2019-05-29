@@ -69,10 +69,11 @@ h1, h2, h3, h4, h5 {
 body {
 	margin: auto;
 	width: 1000px;
+	height: auto;
 }
 
 /* header */
-header {
+header { /* How to get the header to go all the way across the screen? */
 	position: fixed;
 	width: 1000px;
 	display: flex;
@@ -92,4 +93,37 @@ header nav a {
 	text-decoration: none;
 }
 
+header img {
+	padding-right: 30px;
+}
+
 /* section1 */
+.section1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 100px;
+}
+
+.section1 h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+.section1 h1 button { /* How to get the button up more? */
+	-webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  background: #ffffff;
+  padding: 5px 20px 5px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.section1 h1 button:hover {
+	background: #ebebeb;
+  text-decoration: none;
+}
