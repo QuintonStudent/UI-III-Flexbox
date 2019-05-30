@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,185 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* index.html */
+/* body & hr */
+body {
+	margin: auto;
+	width: 1000px;
+	height: auto;
+}
+
+hr {
+	width: 1000px;
+	margin: 50px 0;
+}
+
+/* header */
+header { /* How to get the header to go all the way across the screen? */
+	position: fixed;
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #dedede;
+}
+
+header nav {
+	padding: 20px 0;
+}
+
+header nav a {
+	margin: 0 30px;
+	color: grey;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	color: #000;
+}
+
+header nav a:active {
+	color: #fff;
+}
+
+header img {
+	padding-right: 30px;
+}
+
+/* section1 */
+.section1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 100px;
+}
+
+.section1 h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+.section1 h1 button { /* How to get the button up more? */
+	-webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  background: #ffffff;
+  padding: 5px 20px 5px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.section1 h1 button:hover {
+	background: #ebebeb;
+  text-decoration: none;
+}
+
+/* section2 */
+.section2 {
+	display: flex;
+}
+
+.section2 div { /* How to get text divs on the edges? */
+	padding: 0 30px;
+}
+
+/* middle-img */
+.middle-img {
+	width: 100%;
+	padding: 50px 0;
+}
+
+/* section3 */
+.section3 {
+	display: flex;
+}
+
+.section3 div {
+	padding: 0 30px;
+}
+
+/* contact-section */
+.contact-section { /* temporary fix */
+	padding-left: 30px;
+}
+.contact-section div { /* How to get spacing between text? */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* footer (copyright) */
+footer {
+	text-align: center;
+	padding: 50px 0;
+}
+
+/* services.html */
+/* header */
+.services-header-img {
+	width: 100%;
+	padding: 56px 0 50px;
+}
+
+/* services-section1 */
+.services-section1 h3 {
+	font-size: 2rem;
+}
+
+/* services-section(2-7) */
+.grouped-section {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+
+.grouped-section section {
+	border: solid 1px black;
+	padding: 25px;
+	background-color: #ebebeb;
+	width: 48%;
+	margin: 20px 0;
+}
+
+.grouped-section button {
+	-webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 10px;
+  background: #ffffff;
+  padding: 10px 30px 10px 30px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.grouped-section button:hover {
+	background: #dedede;
+  text-decoration: none;
+}
+
+/* services-section8 */
+.services-section8 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-section8 div {
+	padding: 10px;
+	width: 49%;
+}
+
+.services-section8 div ul {
+	padding: 5px;
+}
+
+.services-section8 div ul li {
+	padding: 5px;
+}
